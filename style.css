@@ -203,6 +203,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid rgb(45, 45, 175);
     transition: all 0.3s ease;
+    padding-right: 52px;
 }
 .home .home-content a:hover{
     color: rgb(45, 45, 175);
@@ -299,6 +300,37 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+/* icon styling */
+
+.fa {
+    padding: 10px;
+    font-size: 35px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #4486b8;
+    color: white;
+  }
+
+
 /* skills section styling */
 
 .skills .title::after{
@@ -367,11 +399,18 @@ section .title::after{
 .skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
-    width: 50%;
+
+.skills-content .right .nodejs::before{
+    width: 75%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .cpluse::before{
     width: 70%;
+}
+.skills-content .right .mongo::before{
+    width: 70%;
+}
+.skills-content .right .git::before{
+    width: 90%;
 }
 
 /* teams section styling */
@@ -679,3 +718,68 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+/* //project css */
+/* Float four columns side by side */
+/* .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {margin: 0 -5px;} */
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  /* .card {
+    box-shadow: 0 4px 8px 0 rgba(236, 235, 240, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: rgb(81, 99, 160);
+    color: white;
+    
+  }
+   */
+  .fa {font-size:50px;}
+
+/*   .project{
+      background: url("/image/pro.jpg");
+      color: white;
+      
+      opacity: 0.4;
+     
+
+      
+  }
+  */
+ section .column .card {
+     margin-left: 750px;
+     font-weight: 500;
+     font-size: 25px;
+     color: rgb(92, 92, 199);
+     
+ }
+ section .column .card a{
+     color: rgb(94, 94, 201);
+     font-weight: 800;
+ }
+ section .project.column{
+     background: url("/image/pro.jpg");
+ }
+ 
+ 
